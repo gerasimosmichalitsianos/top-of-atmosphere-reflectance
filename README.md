@@ -9,5 +9,9 @@ C++ code to convert satellite imagery from digital number (DN) to top-of-atmosph
     this program will expect command-line inputs for (1) the name of the image file (.NTF,.NITF), as well
     as the corresponding XML (.XML,.xml) and .IMD metadata files.
     
+    It is expected that this code will be used and run in a UNIX-like environment (e.g. UNIX, Linux,
+    Mac OSX.). It is also expected that the **docker** command-line software is installed on the 
+    environment or server in which the code is used.
+    
 ###### USAGE
     
