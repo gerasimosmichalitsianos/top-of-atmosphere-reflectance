@@ -26,7 +26,43 @@ C++ code to convert satellite imagery from digital number (DN) to top-of-atmosph
     
     Command-line usage:
     
+    First check out the code:
+    
     $ git clone https://github.com/gerasimosmichalitsianos/top-of-atmosphere-reflectance
     $ cd top-of-atmosphere-reflectance
     $ ls
+    bin  libs  src  Dockerfile  LICENSE  README.md  makefile
+    
+    Then build the docker container e.g.:
+    
+    $ which docker
+    /usr/bin/docker
+    $ docker build -t toa .
+    
+    Then use your 3 input data files (.NTF,.IMD,.XML) to run the Docker image
+    "toa" as a Docker container:
+    
+    $ ls -l /home/username/data
+    XXXXXXXXXXXXX-M1BS-XXXXXXXXXXXX_01_P013.IMD  
+    XXXXXXXXXXXXX-M1BS-XXXXXXXXXXXX_01_P013.NTF 
+    XXXXXXXXXXXXX-M1BS-XXXXXXXXXXXX_01_P013.XML
+    $ DIR=/home/username/data
+    $ docker run -v $DIR:$DIR toa 
+      -f $DIR/XXXXXXXXXXXXX-M1BS-XXXXXXXXXXXX_01_P013.NTF 
+      -i $DIR/XXXXXXXXXXXXX-M1BS-XXXXXXXXXXXX_01_P013.IMD 
+      -x $DIR/XXXXXXXXXXXXX-M1BS-XXXXXXXXXXXX_01_P013.XML
+    
+    The output Geotiffs (2 of them) shall appear in the directory defined
+    by $DIR. For some bands, if the solar irradiance is not available
+    (see ImageUtil.cpp), then these bands will be filled with a NoData
+    value (-9999.0). Both Geotiffs have a GDAL float data-type
+    (GDAL GDT_Float32).
+    
+###### @author:
+    
+    Gerasimos Michalitsianos
+    28 December 2021
+    gerasimosmichalitsianos@gmail.com
+    
+    
     
