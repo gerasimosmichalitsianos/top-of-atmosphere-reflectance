@@ -22,7 +22,26 @@ C++ code to convert satellite imagery from digital number (DN) to top-of-atmosph
 
     Quickbird 2 (QB02), WorldView 2/3, Geoeye 1.
     
-###### USAGE
+###### GENERAL USAGE
+ 
+    $ make
+    $ ./bin/toa -f {filename ntf|tif} -i {filename IMD) -x {filename XML}
+    
+###### COMMAND LINE USAGE
+
+    Adjust the paths for your GDAL installation in the makefile.
+    You may also need to adjust the paths to your g++ compiler, among
+    other paths that may need updating for the required header and 
+    include files. Upon making the appropriate updates to the makefile,
+    you may do the following:
+    
+    $ make
+    $ ./bin/toa 
+      -f $DIR/XXXXXXXXXXXXX-M1BS-XXXXXXXXXXXX_01_P013.NTF 
+      -i $DIR/XXXXXXXXXXXXX-M1BS-XXXXXXXXXXXX_01_P013.IMD 
+      -x $DIR/XXXXXXXXXXXXX-M1BS-XXXXXXXXXXXX_01_P013.XML
+    
+###### USAGE WITH DOCKER
     
     Command-line usage:
     
@@ -63,6 +82,3 @@ C++ code to convert satellite imagery from digital number (DN) to top-of-atmosph
     Gerasimos Michalitsianos
     28 December 2021
     gerasimosmichalitsianos@gmail.com
-    
-    
-    
