@@ -10,8 +10,16 @@ C++ code to convert satellite imagery from digital number (DN) to top-of-atmosph
     as the corresponding XML (.XML,.xml) and .IMD metadata files.
     
     It is expected that this code will be used and run in a UNIX-like environment (e.g. UNIX, Linux,
-    Mac OSX.). It is also expected that the **docker** command-line software is installed on the 
-    environment or server in which the code is used.
+    Mac OSX.). It is also expected that the Docker command-line software is installed on the 
+    environment or server in which the code is used. Often this tool is installed as /bin/docker
+    or /usr/bin/docker, with a typical standard Linux installation. It is also expected tha the
+    command-line Git software will be installed.
     
 ###### USAGE
+    
+    Command-line usage:
+    
+    $ git clone https://github.com/gerasimosmichalitsianos/top-of-atmosphere-reflectance
+    $ cd top-of-atmosphere-reflectance
+    $ ls
     
