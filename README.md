@@ -18,9 +18,9 @@ C++ code to convert satellite imagery from digital number (DN) to top-of-atmosph
     
     Upon completion
     
-###### SUPPORTED SATELLITES
+###### CURRENTLY SUPPORTED SATELLITES FOR THIS C++ CODE
 
-    Quickbird 2 (QB02), WorldView 2/3, Geoeye 1.
+    Quickbird 2 (QB02), WorldView 2/3 (WV02,WV03), Geoeye 1 (OV05).
     
 ###### GENERAL USAGE
  
