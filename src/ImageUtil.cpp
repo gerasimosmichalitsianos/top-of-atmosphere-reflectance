@@ -219,7 +219,7 @@ void ImageUtil::SetSolarIrradiances( SolarIrradiances& Irradiances, String Satel
     Irradiances.BAND_N = 1113.71;        // NIR
     Irradiances.BAND_N2 = -9999.0;       // NIR2
     Irradiances.BAND_RE = -9999.0;       // REDEDGE
-  } else if( SatelliteID == "GE01" ) {
+  } else if( SatelliteID == "OV05" ) {
     // https://apollomapping.com/wp-content/user_uploads/2011/09/GeoEye1_Radiance_at_Aperture.pdf 
     Irradiances.BAND_P = 161.7 * (1.0/1000.0) * (1.0/0.0001);         // PAN 
     Irradiances.BAND_C = -9999.0;                                     // COASTAL
