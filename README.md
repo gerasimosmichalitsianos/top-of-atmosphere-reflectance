@@ -16,7 +16,10 @@ C++ code to convert satellite imagery from digital number (DN) to top-of-atmosph
     or /usr/bin/docker, with a typical standard Linux installation. It is also expected tha the
     command-line Git software will be installed.
     
-    Upon completion
+    Upon completion of running this software, two Geotiffs will be created in the
+    same directory as that of the NITF image file that was passed in: (1) on geotiff
+    holding the top-of-atmosphere radiances, the other holding the top-of-atmosphere
+    reflectances.
     
 ###### CURRENTLY SUPPORTED SATELLITES FOR THIS C++ CODE
 
