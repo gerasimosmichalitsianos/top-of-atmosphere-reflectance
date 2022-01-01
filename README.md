@@ -85,5 +85,5 @@ C++ code to convert satellite imagery from digital number (DN) to top-of-atmosph
 ###### @author:
     
     Gerasimos Michalitsianos
-    28 December 2021
+    1 January 2022
     gerasimosmichalitsianos@gmail.com
