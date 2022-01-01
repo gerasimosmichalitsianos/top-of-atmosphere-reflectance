@@ -27,6 +27,8 @@ C++ code to convert satellite imagery from digital number (DN) to top-of-atmosph
     
 ###### GENERAL USAGE
  
+    $ git clone https://github.com/gerasimosmichalitsianos/top-of-atmosphere-reflectance
+    $ cd top-of-atmosphere-reflectance
     $ make
     $ ./bin/toa -f {filename ntf|tif} -i {filename IMD) -x {filename XML}
     
