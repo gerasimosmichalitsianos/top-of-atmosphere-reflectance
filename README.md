@@ -29,6 +29,10 @@ C++ code to convert satellite imagery from digital number (DN) to top-of-atmosph
  
     $ git clone https://github.com/gerasimosmichalitsianos/top-of-atmosphere-reflectance
     $ cd top-of-atmosphere-reflectance
+    
+    Now adjust the paths to your GDAL installation header and include files.
+    Once this is complete, you can do:
+    
     $ make
     $ ./bin/toa -f {filename ntf|tif} -i {filename IMD) -x {filename XML}
     
