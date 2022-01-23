@@ -23,7 +23,8 @@ void show_version(){
   cout << "  Convert-TOA                                      \n\n";
   cout << "  A C++ program to convert high-resolution imagery   \n";
   cout << "  to top-of-atmosphere (TOA) reflectance.          \n\n";
-  cout << "    Version 1.0.0, 27 November 2021                  \n";
+  cout << "                                                     \n";
+  cout << "    Version 1.0.0, 23 January 2022                   \n";
   cout << "    Gerasimos 'Geri' Michalitsianos                  \n";
   cout << "    Arnold, Maryland                                 \n";
   cout << "    gerasimosmichalitsianos@gmail.com              \n\n";
@@ -66,13 +67,13 @@ void usage() {
   cout << "                                                                                       \n";
   cout << "   SATELLITES SUPPORTED                                                                \n";
   cout << "                                                                                       \n";
-  cout << "     This software supports high-resolution imagery fromt the following                \n";
-  cout << "     satellites: QuickBird 2, WorldView 2, and GeoEye 1.                               \n";
+  cout << "     This software supports high-resolution imagery from the  following                \n";
+  cout << "     satellites: QuickBird 2, WorldView 3, WorldView 2, and GeoEye 1 (OV05).           \n";
   cout << "                                                                                       \n";
   cout << "   LAST UPDATED:                                                                       \n";
   cout << "     Gerasimos Michalitsianos                                                          \n";
   cout << "     Arnold, Maryland                                                                  \n";
-  cout << "     20 December 2021                                                                  \n";
+  cout << "     23 January 2022                                                                   \n";
   cout << "     gerasimosmichalitsianos@gmail.com                                                 \n";
   cout << "                                                                                       \n";
   cout << " ***********************************************************************************   \n";

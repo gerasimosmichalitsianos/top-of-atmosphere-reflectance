@@ -2,6 +2,7 @@
 #define MISC_H_
 #include <iostream>
 typedef std::string String;
+String GetExtension( String );
 String ltrim(const String &s);
 String rtrim(const String &s);
 String trim(const String &s);

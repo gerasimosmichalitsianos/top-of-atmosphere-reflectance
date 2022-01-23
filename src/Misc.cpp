@@ -6,7 +6,14 @@
 #include "Misc.h"
 using namespace std;
 const String WHITESPACE = " \n\r\t\f\v";
- 
+
+String GetExtension( String filename ){
+  /* function to get the extension from a filename (string).
+   */
+  int pos = filename.find_last_of(".");
+  return filename.substr(pos+1);
+}
+
 String ltrim(const String &s) {
   /* function to trim the whitespace, tabs, and newline
    * characters on left side of string. 
