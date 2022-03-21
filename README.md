@@ -56,7 +56,7 @@ C++ code to convert satellite imagery from digital number (DN) to top-of-atmosph
     
     First check out the code:
     
-    $ git clone https://github.com/gerasimosmichalitsianos/top-of-atmosphere-reflectance
+    $ git clone https://github.com/gerasimosmichalitsianos/top_of_atmosphere_reflectance
     $ cd top-of-atmosphere-reflectance
     $ ls
     bin  libs  src  Dockerfile  LICENSE  README.md  makefile
