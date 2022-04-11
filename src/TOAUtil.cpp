@@ -141,6 +141,10 @@ void EarthSunDistance( const char* imd_filename, SolarMetadata* Metadata ) {
     }
   }
 
+  // close out the file-stream
+  // *************************
+  imd_stream.close();
+
   // check to make sure IMD file had firstLineTime entry,
   // if not, error and exit.
   if( firstTimeLine.length()<1 )

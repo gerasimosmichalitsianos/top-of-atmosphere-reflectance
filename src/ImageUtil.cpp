@@ -292,6 +292,14 @@ void ImageUtil::CalculateSpectralRadiancesAndReflectances(
     }
   }
 
+  // write message to console that we are writing files
+  // **************************************************
+  printf("%s\n","");
+  printf("  creating the following top-of-atmosphere radiances geotiff:\n   %s\n", 
+    radiances_filename.c_str() );
+  printf("  creating the following top-of-atmosphere reflectances geotiff:\n   %s\n", 
+    reflectances_filename.c_str() );
+
   // open up GDAL Geotiff dataset objects for writing geotiffs for
   //   (1) geotiff holding top-of-atmosphere radiances
   //   (2) geotiff holding top-of-atmosphere reflectances
@@ -314,6 +322,9 @@ void ImageUtil::CalculateSpectralRadiancesAndReflectances(
     this->GetGeoTransform());
   RadiancesDataset->SetProjection( 
     this->GetProjection() );
+
+  std::cout << this->GetGeoTransform() << std::endl;
+  std::cout << this->GetProjection() << std::endl;
 
   // iterate through bands in image file
   while( BandIndex<N_bands+1 ) {
@@ -428,4 +439,5 @@ void ImageUtil::CalculateSpectralRadiancesAndReflectances(
   }
   GDALClose( RadiancesDataset    );
   GDALClose( ReflectancesDataset );
+  printf("finished%s\n","");
 }
